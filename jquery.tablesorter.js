@@ -890,7 +890,6 @@
             return $.trim(s.toLocaleLowerCase());
         }, type: "text"
     });
-
     ts.addParser({
         id: "digit",
         is: function (s, table) {
@@ -986,6 +985,7 @@
             return $.tablesorter.formatFloat(new Date(s).getTime());
         }, type: "numeric"
     });
+
     ts.addParser({
         id: "time",
         is: function (s) {
@@ -994,6 +994,7 @@
             return $.tablesorter.formatFloat(new Date("2000/01/01 " + s).getTime());
         }, type: "numeric"
     });
+
     ts.addParser({
         id: "metadata",
         is: function (s) {
@@ -1004,6 +1005,7 @@
             return $(cell).metadata()[p];
         }, type: "numeric"
     });
+
     // add default widgets
     ts.addWidget({
         id: "zebra",
